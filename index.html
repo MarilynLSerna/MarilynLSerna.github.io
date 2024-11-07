@@ -109,43 +109,55 @@
             <div class="Column_2">
                 <img src="./images/creative.png" width="450px" height="350px" alt="Creative working">
             </div>
-            <!--Right column-->
-            <div class="Column_1">
-                <h1>About</h1>
-                <p>
-                    I am a software developer who loves to code! I enjoy drawing, reading, and creating new things. 
-                    <br>
-                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, C# and more. 
-                    <br>
-                    <br>I am a full-stack developer and would love to work with you on your project. <a onclick="openForm()" class="contact">Contact</a> me below!
-                </p>
 
-                <!-- Text-based slideshow for skills and languages -->
-                <div class="about-text-slideshow">
-                    <!-- Slide 1: HTML & CSS -->
-                    <div class="about-text-slide fade">
-                        <p><strong>HTML & CSS:</strong> Proficient in building responsive layouts and crafting visually appealing and functional web pages.</p>
-                    </div>
-                    <!-- Slide 2: JavaScript -->
-                    <div class="about-text-slide fade">
-                        <p><strong>JavaScript:</strong> Skilled in making websites interactive with dynamic elements, animations, and handling events effectively.</p>
-                    </div>
-                    <!-- Slide 3: Python -->
-                    <div class="about-text-slide fade">
-                        <p><strong>Python:</strong> Experience in data manipulation, scripting, and backend development using frameworks like Django and Flask.</p>
-                    </div>
-                    <!-- Slide 4: C# & .NET -->
-                    <div class="about-text-slide fade">
-                        <p><strong>C# & .NET:</strong> Built robust web applications with MVC architecture, integrating databases and implementing complex business logic.</p>
-                    </div>
+            <div class="Column_1">
+            <h1>About</h1>
+
+            <!-- About Me and Skills Slideshow Container -->
+            <div id="AboutSkillsSlideshow" class="about-slideshow-container">
+                <!-- Slide 1: About Me -->
+                <div class="about-text-slide">
+                    <p>
+                        I am a software developer who loves to code! I enjoy drawing, reading, and creating new things.
+                        <br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, C# and more.
+                        <br><br>I am a full-stack developer and would love to work with you on your project. <a onclick="openForm()" class="contact">Contact</a> me below!
+                    </p>
                 </div>
 
-                <!-- Controls for About Me Text Slideshow -->
-                <a class="about-text-prev" onclick="plusAboutTextSlides(-1)">&#10094;</a>
-                <a class="about-text-next" onclick="plusAboutTextSlides(1)">&#10095;</a>
-            </div>
-        </div>
-            
+                <!-- Slide 2: HTML & CSS Skills -->
+                <div class="about-text-slide">
+                    <p>
+                        <strong>HTML & CSS:</strong> I have a strong foundation in HTML and CSS, enabling me to create structured, visually appealing web pages.
+                    </p>
+                </div>
+
+                <!-- Slide 3: JavaScript Skills -->
+                <div class="about-text-slide">
+                    <p>
+                        <strong>JavaScript:</strong> Proficient in JavaScript, allowing me to add interactive and dynamic elements to web applications.
+                    </p>
+                </div>
+
+                <!-- Slide 4: Python Skills -->
+                <div class="about-text-slide">
+                    <p>
+                        <strong>Python:</strong> Experienced in Python, useful for backend development and data handling in my projects.
+                    </p>
+                </div>
+
+                <!-- Slide 5: C# and .NET Skills -->
+                <div class="about-text-slide">
+                    <p>
+                        <strong>C# and .NET:</strong> Knowledgeable in C# and the .NET framework, enabling me to build robust applications, especially for enterprise solutions.
+                    </p>
+                </div>
+
+                            <!-- Previous and Next buttons for About Me & Skills Slideshow -->
+                            <a class="prev" onclick="plusAboutTextSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusAboutTextSlides(1)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
 
         <!--GitHub section-->
         <div class="Row" id="GitHub">

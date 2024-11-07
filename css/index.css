@@ -497,7 +497,7 @@ button:hover, .form-container .btn:hover {
     }
 }
 
-@media screen and (mon-width: 661px) and (max-width: 799px) {
+@media screen and (min-width: 661px) and (max-width: 799px) {
     p {
         font-size: 2.75vw;
     }
