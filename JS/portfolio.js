@@ -21,7 +21,6 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-
 function showSlides(n) {
     var slides = document.getElementsByClassName("mySlides"); // This takes all the elements with the class name "mySlides" and stores them in the variable array "slides"
     var dots = document.getElementsByClassName("dot"); // This takes all the elements with the class name "dot" and stores them in the variable array "dots"
@@ -35,6 +34,24 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block"; // This displays the image in the slideshow
     dots[slideIndex - 1].className += " active"; // This adds the active styling to the dot associated with the image
+}
+
+var aboutTextSlideIndex = 1;
+showAboutTextSlides(aboutTextSlideIndex);
+
+function plusAboutTextSlides(n) {
+    showAboutTextSlides(aboutTextSlideIndex += n);
+}
+
+// "About" Section Text Slideshow Functions
+function showAboutTextSlides(n) {
+    var slides = document.getElementsByClassName("about-text-slide");
+    if (n > slides.length) { aboutTextSlideIndex = 1 }
+    if (n < 1) { aboutTextSlideIndex = slides.length }
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[aboutTextSlideIndex - 1].style.display = "block";
 }
 
 // This code will create close the contact form when the user clicks off of it

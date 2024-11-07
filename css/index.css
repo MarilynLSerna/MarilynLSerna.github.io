@@ -6,7 +6,7 @@ html {
 }
 /* Body */
 body {
-    margin: 0%  /* This ensures our site displays all the way to the edge of the browser screen */
+    margin: 0%;  /* This ensures our site displays all the way to the edge of the browser screen */
     opacity: 1; /* This and transition affect the page loading fade in effect */
     transition: 3s opacity; /* This causes a 3 second fade in */
     letter-spacing: .2vw; /* vw is a relative measurement, 1vw is equal to 1% of the viewport width */
@@ -304,6 +304,44 @@ footer {
 /***** End Slideshow Styling *****/
 
 /***** TABLE STYLING -  this section covers the styling of the columns and rows within the table *****/
+
+/* About Text Slideshow Styling */
+.about-text-slideshow {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.about-text-slide {
+    display: none;
+}
+
+.about-text-prev, .about-text-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 8px;
+    margin-top: -22px;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.about-text-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.about-text-prev:hover, .about-text-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
 * { /* The asterisk is a universal selector that applies this effect to all elements on the page */
     box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
 } 
