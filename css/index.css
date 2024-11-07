@@ -306,7 +306,7 @@ footer {
 /***** TABLE STYLING -  this section covers the styling of the columns and rows within the table *****/
 
 /* About Text Slideshow Styling */
-.about-text-slideshow {
+.about-slideshow-container {
     position: relative;
     max-width: 100%;
     margin: auto;
@@ -316,29 +316,40 @@ footer {
 
 .about-text-slide {
     display: none;
+    padding: 1em;
+    color: #333;
+    background-color: #f7ebdb; /* Matches the Column_1 background */
+    border-radius: 5px;
 }
 
-.about-text-prev, .about-text-next {
+.about-text-slide.active {
+    display: block;
+}
+
+.about-prev, .about-next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     padding: 8px;
-    margin-top: -22px;
     color: #333;
     font-weight: bold;
     font-size: 18px;
-    border-radius: 0 3px 3px 0;
+    border-radius: 3px;
     user-select: none;
+    background-color: rgba(0, 0, 0, 0.1); 
 }
 
-.about-text-next {
+.about-next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
-.about-text-prev:hover, .about-text-next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.about-prev {
+    left: 0;
+}
+
+.about-prev:hover, .about-next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
 }
 
